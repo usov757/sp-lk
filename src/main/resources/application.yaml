@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: sp-lk
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spdb
+    driverClassName: org.postgresql.Driver
+    username: postgres
+server:
+  error:
+    include-message: always
+  port: 8080
+logging:
+  level:
+    web: debug
+    org.springframework:
+      security: DEBUG
